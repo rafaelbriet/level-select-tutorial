@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LevelSelect : MonoBehaviour
@@ -94,5 +95,10 @@ public class LevelSelect : MonoBehaviour
 
         nextPageButton.interactable = currentPage != totalPages;
         previousPageButton.interactable = currentPage != 0;
+    }
+
+    public void StartSelectedLevel()
+    {
+        SceneManager.LoadScene(selectedLevel.SceneName);
     }
 }

@@ -17,6 +17,6 @@ MonoBehaviour:
   levelDescription: A modest pair of worn statues in a murky mountain base marks
     the entrance to this dungeon. Beyond the pair of worn statues lies a modest,
     filthy room.
-  isUnolocked: 0
+  isUnolocked: 1
   levelLockedImage: {fileID: 21300000, guid: 4825b944f9994ba45881975a2f87ae77, type: 3}
   levelUnlockedImage: {fileID: 21300000, guid: 05ce98056798fa442942d97f03738394, type: 3}
