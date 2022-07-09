@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Level 7
   levelName: The Bottomless Haunt
-  levelDescription: "A minor waterfall in a murky swamp marks the entrance to this
-    dungeon. Beyond the waterfall lies a massive, deteriorated room. It's covered
-    in rat droppings, large bones and dirt.\r"
+  levelDescription: A minor waterfall in a murky swamp marks the entrance to this
+    dungeon. Beyond the waterfall lies a massive, deteriorated room.
   isUnolocked: 0
   levelLockedImage: {fileID: 21300000, guid: 8e2e56bab71267145a09e2904e331ef8, type: 3}
   levelUnlockedImage: {fileID: 21300000, guid: b66e1ccd60b007641857f81c6e263525, type: 3}

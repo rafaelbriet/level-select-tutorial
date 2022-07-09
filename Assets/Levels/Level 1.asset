@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Level 1
   m_EditorClassIdentifier: 
   sceneName: Level 1
-  levelName: Pits of the Shadow Morass
+  levelName: Pits of the Shadow
   levelDescription: A narrow fallen temple in a dire mountain base marks the entrance
-    to this dungeon. Beyond the fallen temple lies a massive, weary room. It's covered
-    in broken pottery, dead insects and puddles of water.
+    to this dungeon. Beyond the fallen temple lies a massive, weary room.
   isUnolocked: 1
   levelLockedImage: {fileID: 21300000, guid: ad21da826b433784aaf49f0e16fd042f, type: 3}
   levelUnlockedImage: {fileID: 21300000, guid: 9290e854420bf364eb2691a1bfba285e, type: 3}

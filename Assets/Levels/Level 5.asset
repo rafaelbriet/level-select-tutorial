@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Level 5
   levelName: The Vicious Catacombs
-  levelDescription: "A narrow graveyard in a bleak forest marks the entrance to this
-    dungeon. Beyond the graveyard lies a small, worn room. It's covered in dead insects,
-    rubble and dead insects.\r"
+  levelDescription: A narrow graveyard in a bleak forest marks the entrance to this
+    dungeon. Beyond the graveyard lies a small, worn room.
   isUnolocked: 0
   levelLockedImage: {fileID: 21300000, guid: 26db76340b7292b49b094cc9d554834d, type: 3}
   levelUnlockedImage: {fileID: 21300000, guid: e85bea817db9d9642b4cd533e4a74880, type: 3}

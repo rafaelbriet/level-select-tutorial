@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Level 3
   m_EditorClassIdentifier: 
   sceneName: Level 3
-  levelName: Quarters of the Spirit Forest
-  levelDescription: "A short broken statue in a grim bog marks the entrance to this
-    dungeon. Beyond the broken statue lies a scanty, deteriorated room. It's covered
-    in moss, dirt and dirt.\r"
+  levelName: Quarters of the Spirit
+  levelDescription: A short broken statue in a grim bog marks the entrance to this
+    dungeon. Beyond the broken statue lies a scanty, deteriorated room.
   isUnolocked: 1
   levelLockedImage: {fileID: 21300000, guid: 44c2497970e16de488106b4045159b75, type: 3}
   levelUnlockedImage: {fileID: 21300000, guid: fd6d1df9f6b78dc459df5f2aa93d0efc, type: 3}

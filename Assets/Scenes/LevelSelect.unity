@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 745073901}
   - component: {fileID: 745073900}
   - component: {fileID: 745073899}
+  - component: {fileID: 745073903}
   m_Layer: 5
   m_Name: LevelSelectCanvas
   m_TagString: Untagged
@@ -610,6 +611,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &745073903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745073898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51c3ed350eda1f4fa1d69eeeb0b532b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - {fileID: 11400000, guid: 7b9c9cca53734b44f9d0163b021bd061, type: 2}
+  - {fileID: 11400000, guid: 8f8fa9f43cc0d9b41bc2d7dc1a980262, type: 2}
+  - {fileID: 11400000, guid: 783a07a0c285e42419bc98aec9858060, type: 2}
+  - {fileID: 11400000, guid: 664bc8dff244bea46ac7805659711cc8, type: 2}
+  - {fileID: 11400000, guid: 04e4ac17aa10c484094931b27bf089ff, type: 2}
+  - {fileID: 11400000, guid: 89171594c4ff6e34eb66e5d25f84c867, type: 2}
+  - {fileID: 11400000, guid: 71799727b15d4db4ab9746a0a5e39195, type: 2}
+  - {fileID: 11400000, guid: 7be429eaa11c5114b933a459d6da6b27, type: 2}
+  - {fileID: 11400000, guid: 325cd746f23c37e448694f1d64fce788, type: 2}
 --- !u!1 &919651660
 GameObject:
   m_ObjectHideFlags: 0

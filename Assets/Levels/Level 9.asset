@@ -15,8 +15,7 @@ MonoBehaviour:
   sceneName: Level 9
   levelName: The Western Catacombs
   levelDescription: A narrow broken statue in a somber swamp marks the entrance to
-    this dungeon. Beyond the broken statue lies a narrow, clammy room. It's covered
-    in dead vermin, crawling insects and broken pottery.
+    this dungeon. Beyond the broken statue lies a narrow, clammy room.
   isUnolocked: 0
   levelLockedImage: {fileID: 21300000, guid: 5a2986815a976a04eb33750d2a2e1331, type: 3}
   levelUnlockedImage: {fileID: 21300000, guid: ed0534a5834488e44a6c085673a5ad36, type: 3}

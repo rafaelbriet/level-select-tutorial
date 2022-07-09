@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Level 2
   m_EditorClassIdentifier: 
   sceneName: Level 2
-  levelName: Labyrinth of the Infernal Raven
-  levelDescription: "A short fallen temple in a dire morass marks the entrance to
-    this dungeon. Beyond the fallen temple lies a small, shady room. It's covered
-    in rat droppings, dead vermin and dirt.\r"
+  levelName: Labyrinth of the Raven
+  levelDescription: A short fallen temple in a dire morass marks the entrance to
+    this dungeon. Beyond the fallen temple lies a small, shady room.
   isUnolocked: 1
   levelLockedImage: {fileID: 21300000, guid: ee12f4dd7c0d6f440aadec6c3edff258, type: 3}
   levelUnlockedImage: {fileID: 21300000, guid: 1535c68c903c1cb428591859e63c497f, type: 3}

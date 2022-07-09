@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Level 6
   levelName: The Red Haunt
-  levelDescription: "A short crypt in a eerie boulder field marks the entrance to
-    this dungeon. Beyond the crypt lies a modest, humid room. It's covered in cobwebs,
-    bat droppings and dead vermin.\r"
+  levelDescription: A short crypt in a eerie boulder field marks the entrance to
+    this dungeon. Beyond the crypt lies a modest, humid room.
   isUnolocked: 0
   levelLockedImage: {fileID: 21300000, guid: 87c16dec139198644a0d4e989e2276da, type: 3}
   levelUnlockedImage: {fileID: 21300000, guid: 0ef8c08b3105cc245bfb6557221544b5, type: 3}
