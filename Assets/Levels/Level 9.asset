@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 9
   m_EditorClassIdentifier: 
   sceneName: Level 9
-  levelName: The Western Catacombs
+  levelName: The Catacombs
   levelDescription: A narrow broken statue in a somber swamp marks the entrance to
     this dungeon. Beyond the broken statue lies a narrow, clammy room.
   isUnolocked: 0

@@ -1,19 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelSelect : MonoBehaviour
 {
     [SerializeField]
     private Level[] levels;
+    [Header("Level cards")]
     [SerializeField]
     private GameObject levelCardPrefab;
     [SerializeField]
     private RectTransform levelCardsContainer;
+    [Header("Pagination")]
+    [SerializeField]
+    private int levelsPerPage;
+    [SerializeField]
+    private Button nextPageButton;
+    [SerializeField]
+    private Button previousPageButton;
+
+    private int currentPage = 0;
 
     private void Awake()
     {
         CreateLevelCards();
+        RefreshPageContent();
     }
 
     private void CreateLevelCards()
@@ -24,5 +36,45 @@ public class LevelSelect : MonoBehaviour
             LevelCard levelCard = levelCardGO.GetComponent<LevelCard>();
             levelCard.SetCardContent(level);
         }
+    }
+
+    private void RefreshPageContent()
+    {
+        int startIndex = currentPage * levelsPerPage;
+        int endIndex = startIndex + levelsPerPage;
+
+        for (int i = 0; i < levels.Length; i++)
+        {
+            if (i >= startIndex && i < endIndex)
+            {
+                levelCardsContainer.GetChild(i).gameObject.SetActive(true);
+            }
+            else
+            {
+                levelCardsContainer.GetChild(i).gameObject.SetActive(false);
+            }
+        }
+
+        CheckPaginationButtons();
+    }
+
+    public void NextPage()
+    {
+        currentPage++;
+        RefreshPageContent();
+    }
+
+    public void PreviousPage()
+    {
+        currentPage--;
+        RefreshPageContent();
+    }
+
+    private void CheckPaginationButtons()
+    {
+        int totalPages = levels.Length / levelsPerPage;
+
+        nextPageButton.interactable = currentPage != totalPages;
+        previousPageButton.interactable = currentPage != 0;
     }
 }
