@@ -770,6 +770,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 325cd746f23c37e448694f1d64fce788, type: 2}
   levelCardPrefab: {fileID: 5004024756898106954, guid: 41c824cbb92c1ce48be2fcaa68ea8a88, type: 3}
   levelCardsContainer: {fileID: 996402009}
+  levelCardToggleGroup: {fileID: 996402013}
   levelsPerPage: 4
   nextPageButton: {fileID: 150051975}
   previousPageButton: {fileID: 1242951580}
@@ -821,6 +822,7 @@ GameObject:
   - component: {fileID: 996402009}
   - component: {fileID: 996402011}
   - component: {fileID: 996402012}
+  - component: {fileID: 996402013}
   m_Layer: 5
   m_Name: LevelCards
   m_TagString: Untagged
@@ -888,6 +890,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 0, y: 0}
+--- !u!114 &996402013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996402008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &1242951578
 GameObject:
   m_ObjectHideFlags: 0

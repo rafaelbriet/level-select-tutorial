@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,11 +8,15 @@ public class LevelSelect : MonoBehaviour
 {
     [SerializeField]
     private Level[] levels;
+
     [Header("Level cards")]
     [SerializeField]
     private GameObject levelCardPrefab;
     [SerializeField]
     private RectTransform levelCardsContainer;
+    [SerializeField]
+    private ToggleGroup levelCardToggleGroup;
+
     [Header("Pagination")]
     [SerializeField]
     private int levelsPerPage;
@@ -21,6 +26,7 @@ public class LevelSelect : MonoBehaviour
     private Button previousPageButton;
 
     private int currentPage = 0;
+    private Level selectedLevel;
 
     private void Awake()
     {
@@ -35,7 +41,19 @@ public class LevelSelect : MonoBehaviour
             GameObject levelCardGO = Instantiate(levelCardPrefab, levelCardsContainer);
             LevelCard levelCard = levelCardGO.GetComponent<LevelCard>();
             levelCard.SetCardContent(level);
+            levelCard.SetToggleGroup(levelCardToggleGroup);
+            levelCard.Toggle.onValueChanged.AddListener(isOn => LevelSelected(isOn, levelCard));
         }
+    }
+
+    private void LevelSelected(bool isOn, LevelCard levelCard)
+    {
+        if (isOn == false)
+        {
+            return;
+        }
+
+        selectedLevel = levelCard.LevelInfo;
     }
 
     private void RefreshPageContent()
