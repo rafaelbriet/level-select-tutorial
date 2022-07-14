@@ -28,7 +28,7 @@ public class LevelCard : MonoBehaviour
         levelName.SetText(level.LevelName);
         levelDescription.SetText(level.LevelDescription);
 
-        if (level.IsUnolocked)
+        if (level.IsUnlocked)
         {
             levelImage.sprite = level.LevelUnlockedImage;
         }

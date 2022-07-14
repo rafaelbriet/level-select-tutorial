@@ -13,27 +13,22 @@ public class Level : ScriptableObject
     [TextArea(10, 15)]
     private string levelDescription;
     [SerializeField]
-    private bool isUnolocked;
+    private bool startUnlocked;
     [SerializeField]
     private Sprite levelLockedImage;
     [SerializeField]
     private Sprite levelUnlockedImage;
-
-    public bool IsUnolocked
-    {
-        get
-        {
-            return isUnolocked;
-        }
-        set
-        {
-            isUnolocked = value;
-        }
-    }
 
     public string SceneName { get { return sceneName; } }
     public string LevelName { get { return levelName; } }
     public string LevelDescription { get { return levelDescription; } }
     public Sprite LevelLockedImage { get { return levelLockedImage; } }
     public Sprite LevelUnlockedImage { get { return levelUnlockedImage; } }
+
+    public bool IsUnlocked { get; set; }
+
+    private void OnEnable()
+    {
+        IsUnlocked = startUnlocked;
+    }
 }
